@@ -5,7 +5,9 @@ metadata:
 spec:
   ports:
   - name: nginx-port
+    protocol: TCP
     port: 5000
     targetPort: nginx-port
+  type: ClusterIP
   selector:
     app: nginx
